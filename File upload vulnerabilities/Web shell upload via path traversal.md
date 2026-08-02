@@ -20,15 +20,16 @@
  ![[Pasted image 20260802164442.png]]
  ![[Pasted image 20260802164512.png]]
  
- The problem is, the server treats my script as a text file and this is unexecutable.
+ The problem is, the server treats my script at "avatars" folder as a text file and this is unexecutable.
  ![[Pasted image 20260802164646.png]]
 
- After playing around for a while I realized that there is an "Upload Avatar" functionality below each post, which is really weird and my remaining work is easy now
+ I tried to change my file's name into: `..%2fscript.php` (%2f is encoded version of / in URL) with an idea of uploading my file to the previous folder instead... and it worked
+ ![[Pasted image 20260802231003.png]]
 
 ---
 
 ## ⚡ 4. PoC / Final Payload
-
+File name: `..%2fscript.php`
 [[Webshell script]]
 ---
 ## 💡 5. Key Takeaways & Remediation
