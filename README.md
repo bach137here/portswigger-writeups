@@ -17,7 +17,7 @@ Welcome to my repository containing detailed solution write-ups, methodology, pa
 ## 🚀 Progress & Topics Covered
 
 | Category | Difficulty | Labs Completed |
-| :--- | :---: | :---: | :---: |
+| :--- | :---: | :---: | 
 | 💉 **SQL Injection** | Apprentice / Practitioner | 🟡 In Progress |
 | 🔑 **Authentication** | Apprentice / Practitioner | 🟢 Done |
 | 📂 **Directory Traversal** | Apprentice | ⚪ Planned | 
