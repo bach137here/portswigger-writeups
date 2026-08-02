@@ -1,7 +1,7 @@
 
 #portswigger #solution #file_upload
 
-- **Category:** **File upload vulnerabilities**
+- **Category:** [[File upload vulnerabilities]]
 - **Difficulty:** [[PRACTITIONER]]
 - **URL Lab:** https://portswigger.net/web-security/learning-paths/file-upload-vulnerabilities
 - **Date Solved:** 2026-08-02
@@ -14,25 +14,22 @@
 ---
 
 ## 🔍 2. Reconnaissance & Vulnerability Analysis
-* **Vulnerable Endpoint/Parameter:** 
-* **Root Cause & Mechanism:**
+>This lab contains a vulnerable image upload function. The server is configured to prevent execution of user-supplied files, but this restriction can be bypassed by exploiting a secondary vulnerability.
 
----
+ I tried to upload the [[Webshell script]] directly and this is the result:
+ ![[Pasted image 20260802164442.png]]
+ ![[Pasted image 20260802164512.png]]
+ 
+ The problem is, the server treats my script as a text file and this is unexecutable.
+ ![[Pasted image 20260802164646.png]]
 
-## 🚀 3. Exploitation
-
-1. **Step 1:** 
-2. **Step 2:** 
-3. **Step 3:** 
-4. **Step 4:** 
+ After playing around for a while I realized that there is an "Upload Avatar" functionality below each post, which is really weird and my remaining work is easy now
 
 ---
 
 ## ⚡ 4. PoC / Final Payload
 
-```http
-
-```
+[[]]
 ---
 ## 💡 5. Key Takeaways & Remediation
 
