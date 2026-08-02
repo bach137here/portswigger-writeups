@@ -29,9 +29,9 @@
 
 ## ⚡ 4. PoC / Final Payload
 
-[[]]
+[[Webshell script]]
 ---
 ## 💡 5. Key Takeaways & Remediation
 
-- **Key Concept:**
-- **Remediation:**
+- **Key Concept:** Upload a malicious PHP script into the 'Avatar Upload' section to gain the system's control
+- **Remediation:** [[Preventing File Upload Vulnerabilities]]
