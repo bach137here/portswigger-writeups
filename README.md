@@ -20,6 +20,7 @@ Welcome to my repository containing detailed solution write-ups, methodology, pa
 | :--- | :---: | :---: | 
 | 💉 **SQL Injection** | Apprentice / Practitioner | 🟡 In Progress |
 | 🔑 **Authentication** | Apprentice / Practitioner | 🟢 Done |
+| 📁 **File upload vulnerabilities** | Apprentice / Practitioner | 🟡 In Progress |
 | 📂 **Directory Traversal** | Apprentice | ⚪ Planned | 
 | ⚡ **Command Injection** | Apprentice | ⚪ Planned | 
 | 🛡️ **Cross-Site Scripting (XSS)** | Apprentice / Practitioner | ⚪ Planned |
