@@ -7,7 +7,6 @@
 - **Date Solved:** 2026-08-02
 
 ---
-
 ## 🎯 1. Lab Objective
 > Determine the number of columns in original Query (filtering the category) 
 

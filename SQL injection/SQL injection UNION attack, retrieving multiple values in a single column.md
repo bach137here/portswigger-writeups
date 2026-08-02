@@ -9,7 +9,16 @@
 ---
 Similar to [[SQL injection UNION attack]]
 ## 🎯 1. Lab Objective
-> Perform an SQLi attack to retrieve the information from 'users' table
+> Perform an SQLi attack to retrieve the information from 'users' table, retrieving multiple values in a single column
+
+==Cheatsheet:==
+
+| String concatenation |                                                                                   |
+| -------------------- | --------------------------------------------------------------------------------- |
+| Oracle               | `'foo'\|'bar'`                                                                    |
+| Microsoft            | `'foo'+'bar'`                                                                     |
+| PostgreSQL           | `'foo'\|'bar'`                                                                    |
+| MySQL                | `'foo' 'bar'` [Note the space between the two strings]  <br>`CONCAT('foo','bar')` |
 
 ---
 
