@@ -1,5 +1,5 @@
 
-#portswigger #solution #sqli
+#portswigger #solution #file_upload
 
 - **Category:** [[File upload vulnerabilities]]
 - **Difficulty:** [[Apprentice]]
