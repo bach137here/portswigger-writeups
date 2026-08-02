@@ -16,14 +16,14 @@ Welcome to my repository containing detailed solution write-ups, methodology, pa
 
 ## 🚀 Progress & Topics Covered
 
-| Category | Difficulty | Labs Completed | Write-up Link |
+| Category | Difficulty | Labs Completed |
 | :--- | :---: | :---: | :---: |
 | 💉 **SQL Injection** | Apprentice / Practitioner | 🟡 In Progress |
 | 🔑 **Authentication** | Apprentice / Practitioner | 🟢 Done |
-| 📂 **Directory Traversal** | Apprentice | ⚪ Planned | Coming Soon |
-| ⚡ **Command Injection** | Apprentice | ⚪ Planned | Coming Soon |
-| 🛡️ **Cross-Site Scripting (XSS)** | Apprentice / Practitioner | ⚪ Planned | Coming Soon |
-| 🔄 **Server-Side Request Forgery (SSRF)** | Practitioner | ⚪ Planned | Coming Soon |
+| 📂 **Directory Traversal** | Apprentice | ⚪ Planned | 
+| ⚡ **Command Injection** | Apprentice | ⚪ Planned | 
+| 🛡️ **Cross-Site Scripting (XSS)** | Apprentice / Practitioner | ⚪ Planned |
+| 🔄 **Server-Side Request Forgery (SSRF)** | Practitioner | ⚪ Planned | 
 
 ---
 
