@@ -15,7 +15,11 @@
 
 ## 🔍 2. Reconnaissance & Vulnerability Analysis
 
-This lab contains a vulnerable image upload function. It doesn't perform any validation on the files users upload before storing them on the server's filesystem.
+This lab contains a vulnerable image upload function. It attempts to prevent users from uploading unexpected file types, but relies on checking user-controllable input to verify this.
+
+==note: content-type header==
+application/x-www-form-urlencoded : simple text files
+multipart/form-data : PDF or Image files (large amount of binary data)
 
 ---
 
