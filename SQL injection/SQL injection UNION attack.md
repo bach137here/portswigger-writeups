@@ -1,8 +1,8 @@
 
 #portswigger #solution #sqli
 
-- **Category:** **SQL injection**
-- **Difficulty:** PRACTITIONER
+- **Category:** [[SQL injection]]
+- **Difficulty:** [[PRACTITIONER]]
 - **URL Lab:** https://portswigger.net/web-security/learning-paths/sql-injection
 - **Date Solved:** 2026-08-02
 
