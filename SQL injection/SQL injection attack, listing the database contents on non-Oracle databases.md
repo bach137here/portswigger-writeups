@@ -14,7 +14,7 @@ Kiểm tra:
 
 ![[Pasted image 20260803160531.png]] -> 200
 
-![[Pasted image 20260803160553.png]]  -> 202
+![[Pasted image 20260803160553.png]]  -> 200
 
 
 
