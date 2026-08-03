@@ -33,12 +33,12 @@
 ---
 ## 🚀 3. Exploitation
 
-
+ Typically, the solution is the same as some previous ones, the key difference is changing the PHP script into `script.php%00.png` to trick the server
 ---
 
 ## ⚡ 4. PoC / Final Payload
 
-
+`script.php%00.png`
 [[Webshell script]]
 ---
 ## 💡 5. Key Takeaways & Remediation
