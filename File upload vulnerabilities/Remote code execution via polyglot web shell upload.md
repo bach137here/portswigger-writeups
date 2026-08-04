@@ -14,7 +14,10 @@
 ---
 
 ## 🔍 2. Reconnaissance & Vulnerability Analysis
->This lab contains a vulnerable image upload function. Certain file extensions are blacklisted, but this defense can be bypassed due to a fundamental flaw in the configuration of this blacklist.
+>As regular in this topic, this website has an image uploading function
+![[Pasted image 20260804141802.png]]
+
+Base on the LAB's description, I'm going to create a 
 
 ---
 ## 🚀 3. Exploitation
