@@ -40,3 +40,4 @@ File file = new File(BASE_DIRECTORY, userInput);
 if (file.getCanonicalPath().startsWith(BASE_DIRECTORY)) {
     // Process file safely
 }
+```
