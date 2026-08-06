@@ -12,3 +12,8 @@
 We can solve this LAB easily by following the exact instruction:
 ![[Pasted image 20260806152706.png]]
 ![[Pasted image 20260806152715.png]]
+
+We can also get the `whoami` and other informations using this technique:
+![[Pasted image 20260806153902.png]]
+![[Pasted image 20260806153916.png]]
+
