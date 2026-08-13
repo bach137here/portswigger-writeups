@@ -38,7 +38,5 @@ Of course it didn't work ;(
 
 ![[Pasted image 20260813171700.png]]
 
-After a few more attempts, I asked AI for help:
-
-![[Pasted image 20260813172025.png]]
+After trying for such a long time, I realised that I need some hints from the LAB, and the bottom line is using the %0d%0a to manipulate the response's header.
 
