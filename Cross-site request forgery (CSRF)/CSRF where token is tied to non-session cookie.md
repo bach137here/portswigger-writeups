@@ -40,3 +40,15 @@ Of course it didn't work ;(
 
 After trying for such a long time, I realised that I need some hints from the LAB, and the bottom line is using the %0d%0a to manipulate the response's header.
 
+![[Pasted image 20260813173731.png]]
+
+That's incredible. I was so surprised!
+
+It worked for sure:
+![[Pasted image 20260813174049.png]]
+
+we also wanted that this csrfCookie will be attached with our CSRF attack, so that we may want the ``SameSite=None``
+
+![[Pasted image 20260813174955.png]]
+
+
