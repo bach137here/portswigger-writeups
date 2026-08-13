@@ -28,3 +28,17 @@ Host: 0a4f009b0365817b80deae2b00e900e9.web-security-academy.net
 ```
  and it didn't work, unfortunately ;)
 
+![[Pasted image 20260813170813.png]]
+somehow they threw the Set-Cookie for csrfKey away and I think my main goal here is to figure it out.
+And I realise that we need a different Set-Cookie Header for the csrfKey. So that I tried this payload:
+
+Second trial:
+![[Pasted image 20260813171543.png]]
+Of course it didn't work ;(
+
+![[Pasted image 20260813171700.png]]
+
+After a few more attempts, I asked AI for help:
+
+![[Pasted image 20260813172025.png]]
+
