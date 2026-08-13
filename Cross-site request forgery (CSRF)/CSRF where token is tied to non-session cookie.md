@@ -51,4 +51,16 @@ we also wanted that this csrfCookie will be attached with our CSRF attack, so th
 
 ![[Pasted image 20260813174955.png]]
 
+Payload:
+``
+https://0a4f009b0365817b80deae2b00e900e9.web-security-academy.net/?search=nothing%0d%0aSet-Cookie%3AcsrfKey=ooooooooooooo%3BSameSite=None
+
+![[Pasted image 20260813175801.png]]
+(The csrfKey has been successfully modified!)
+
+Now our remaining work is to architect a final payload to:
+1) Change the victim's cookie to be ours
+2) Send the email changing request with our CSRF token (which is associated with our csrfKey cookie)
+
+Using the CSRF PoC generator that is built in to Burp Suite Professional, I can easily craft this final  CSRF payload:
 
