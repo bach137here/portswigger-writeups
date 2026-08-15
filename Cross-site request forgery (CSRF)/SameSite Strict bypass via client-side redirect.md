@@ -29,4 +29,16 @@ The 'submit' must be 1? So what's the point of it here?
 ![[Pasted image 20260815230741.png]]
 
 I'll put that 'submit' into my consideration. 
-My task now is to find an endpoint that helps me 
+My task now is to find an endpoint that helps me construct a gadget that results in a secondary request within the same site.
+
+![[Pasted image 20260815231449.png]]
+
+There's a comment section, I tried to comment something to this post:
+![[Pasted image 20260815232019.png]]
+![[Pasted image 20260815231643.png]]
+I see, the browser automatically redirects me to home page after I post a comment.
+
+I tried to use the path traversal to manipulate the "Location" header in the response:
+![[Pasted image 20260815232154.png]]
+
+It seems favorable, but didn't work
