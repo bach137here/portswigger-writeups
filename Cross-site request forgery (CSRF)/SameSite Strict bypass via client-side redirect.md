@@ -86,3 +86,6 @@ I crafted this PoC to send to the victim:
 YAYYY !!
 
 ![[Pasted image 20260815235856.png]]
+
+I should know the fact that I can use 'GET' for my email changing request earlier ;)
+![[Pasted image 20260816074750.png]]
