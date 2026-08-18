@@ -24,8 +24,15 @@
 
 
 
+Only ``<body>`` tag works
+
+
 ![[Pasted image 20260818231326.png]]
 
 
 ![[Pasted image 20260818232102.png]]
+
+![[Pasted image 20260818233806.png]]
+
+Trying to find a way to exploit using ``<body>``
 
