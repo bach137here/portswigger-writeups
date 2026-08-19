@@ -6,3 +6,11 @@
 
 
 ![[Pasted image 20260819161715.png]]
+
+After reanalyzing the structure, I came up with this another idea:
+![[Pasted image 20260819162428.png]]
+![[Pasted image 20260819162359.png]]
+
+![[Pasted image 20260819162802.png]]
+It didn't work out unfortunately ;(
+
