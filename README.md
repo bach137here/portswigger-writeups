@@ -14,19 +14,6 @@ Welcome to my repository containing detailed solution write-ups, methodology, pa
 
 ---
 
-## 🚀 Progress & Topics Covered
-
-| Category | Difficulty | Labs Completed |
-| :--- | :---: | :---: | 
-| 💉 **SQL Injection** | Apprentice / Practitioner | 🟡 In Progress |
-| 🔑 **Authentication** | Apprentice / Practitioner | 🟢 Done |
-| 📁 **File upload vulnerabilities** | Apprentice / Practitioner | 🟡 In Progress |
-| 📂 **Directory Traversal** | Apprentice | ⚪ Planned | 
-| ⚡ **Command Injection** | Apprentice | ⚪ Planned | 
-| 🛡️ **Cross-Site Scripting (XSS)** | Apprentice / Practitioner | ⚪ Planned |
-| 🔄 **Server-Side Request Forgery (SSRF)** | Practitioner | ⚪ Planned | 
-
----
 
 ## 🛠️ Tools & Methodology
 
